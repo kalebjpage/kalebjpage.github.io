@@ -1,0 +1,448 @@
+/* CSS reset */
+body, header, main, footer, .grid-container {
+    margin: 0;
+    padding: 0;
+    border: 0;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #8ECAE6;
+    color: #023047;
+}
+
+header {
+    background-color: #219EBC;
+    color: #FFFFFF;
+    text-align: center;
+}
+
+h1 {
+    margin: 0;
+    color: #000000;
+}
+
+main {
+    max-width: fit-content;
+    margin: 20px auto;
+    padding: 0 20px;
+}
+
+.grid-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    grid-gap: 20px;
+}
+
+.employee {
+    display: flex;
+    background-color: #B6E2FF;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.employee img {
+    width: 150px;
+    height: 150px;
+    object-fit: cover;
+    border-radius: 50%;
+    margin-right: 20px;
+}
+
+.employee .info {
+    flex-grow: 1;
+}
+
+.aboutus {
+    background-color: white;
+}
+
+h2 {
+    margin-top: 0;
+    text-align: center;
+}
+
+video {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    padding-top: 3%;
+    padding-bottom: 3%;
+}
+
+
+footer {
+    background-color: #219EBC;
+    color: #FFFFFF;
+    text-align: center;
+    padding: 10px 0;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+}
+
+/* Styles rules for nav bar */
+
+nav {
+    background-color: #023047;
+}
+
+.ham-menu {
+    height: 40px;
+    width: 40px;
+    margin-left: auto;
+    position: relative;
+    margin-right: 25px;
+}
+
+.ham-menu span {
+    height: 5px;
+    width: 100%;
+    background-color: white;
+    border-radius: 25px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    transition: .3s ease;
+}
+
+.ham-menu span:nth-child(1) {
+    top: 25%;
+}
+
+.ham-menu span:nth-child(3) {
+    top: 75%;
+}
+
+.ham-menu.active span:nth-child(1) {
+    top: 50%;
+    transform: translate(-50%, -50%) rotate(45deg);
+}
+
+.ham-menu.active span:nth-child(2) {
+    opacity: 0;
+}
+
+.ham-menu.active span:nth-child(3) {
+    top: 35%;
+    transform: translate(-50%, 50%) rotate(-45deg)
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+    border-bottom: 1px solid white;
+}
+
+.logo h1 {
+    word-wrap: break-word;
+    color: white;
+    font-family: "Advent Pro", sans-serif;
+    font-size: xx-large;
+}
+
+.logo img {
+    border-radius: 50%;
+    padding: 25px;
+}
+
+.links {
+    display: flex;
+    border-top: white;
+    justify-content: space-between;
+    padding-left: 30px;
+    padding-right: 30px;
+}
+
+nav a {
+    text-align: center;
+    padding: 12px;
+    color: white;
+    text-decoration: none;
+    font-size: 17px;
+    font-family: "Advent Pro", sans-serif;
+}
+
+nav a:hover {
+    background-color: #000;
+}
+
+.current {
+    background-color: #219EBC;
+}
+
+header img {
+    width: 100%;
+}
+
+/*Style rules for main */
+
+main {
+    margin: 2%;
+    padding-bottom: 2%;
+}
+
+main h1 {
+    font-family: "Advent Pro", sans-serif;
+    font-size: xx-large;
+}
+
+main p {
+    font-family: "PT Mono", monospace;
+    font-weight: 400;
+    font-style: normal;
+}
+
+/*Style rules for form */
+input {
+    margin-bottom: 12px;
+}
+
+label {
+    font-family: "Advent Pro", sans-serif;
+}
+
+fieldset {
+    margin-bottom: 5%;
+}
+
+/*Style rules for footer */
+footer {
+    background-color: #023047;
+    padding: 2%;
+}
+
+.credits {
+    color: white;
+    font-weight: lighter;
+}
+
+.social img {
+    padding: 12px;
+}
+
+.mobile {
+    display: none;
+}
+
+form {
+    background-color: #FFFFFF;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1);
+    margin-top: 20px;
+}
+
+label {
+    display: block;
+    margin-bottom: 8px;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="number"],
+textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 16px;
+    border: 1px solid #CCCCCC;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+
+textarea {
+    height: 120px;
+}
+
+button[type="submit"] {
+    background-color: #219EBC;
+    color: #FFFFFF;
+    border: none;
+    padding: 12px 20px;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+button[type="submit"]:hover {
+    background-color: #023047;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+    border: 2px solid #000000;
+}
+
+th, td {
+    padding: 12px;
+    text-align: left;
+    border-bottom: 1px solid #CCCCCC;
+}
+
+th {
+    background-color: #023047;
+    color: #FFFFFF;
+}
+
+tbody tr:nth-child(even) {
+    background-color: #F0F0F0;
+}
+
+#answer{
+    display: none;
+}
+
+.arrow-button {
+    width: 20px; /* Adjusted width for smaller size */
+    height: 20px; /* Adjusted height for smaller size */
+    background-color: #ccc;
+    border: 1px solid #999;
+    border-radius: 50%;
+    cursor: pointer;
+    position: relative;
+    overflow: hidden;
+    margin: 12px;
+  }
+
+  .arrow-button::after {
+    content: '';
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 8px; /* Adjusted arrow size for smaller size */
+    height: 8px; /* Adjusted arrow size for smaller size */
+    border-top: 1px solid #333; /* Adjusted arrow thickness for smaller size */
+    border-right: 1px solid #333; /* Adjusted arrow thickness for smaller size */
+    transform: translate(-50%, -50%) rotate(45deg);
+  }
+
+/*Mobile style rules */
+@media screen and (max-device-width: 600px), print {
+    .logo {
+        display: flex;
+        align-items: center;
+        position: relative;
+        margin-bottom: 10px;
+        text-align: center;
+    }
+
+    .logo h1 {
+        word-wrap: break-word;
+        color: white;
+        font-family: "Advent Pro", sans-serif;
+        font-size: x-large;
+        margin-left: 20px;
+    }
+
+    .logo img {
+        border-radius: 50%;
+        padding: 5px;
+        width: 100px;
+        height: 100px;
+        margin-bottom: 10px;
+    }
+
+    .logo.active {
+        display: none;
+    }
+
+    .links {
+        display: none;
+        transition: .3s ease;
+    }
+
+    .links.active {
+        display: flex;
+        background-color: #023047;
+        width: 100%;
+        position: fixed;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        font-size: large;
+        transition: .3s ease;
+        font-family: "Advent Pro", sans-serif;
+    }
+
+    nav a {
+        font-size: xx-large;
+    }
+
+    .mobile {
+        display: block;
+    }
+
+    form {
+        padding: 10px;
+    }
+
+    input[type="text"],
+    input[type="email"],
+    input[type="number"],
+    textarea {
+        padding: 8px;
+        margin-bottom: 12px;
+    }
+
+    button[type="submit"] {
+        padding: 10px 16px;
+        font-size: 14px;
+    }
+    table {
+        font-size: 14px;
+    }
+
+    th, td {
+        padding: 8px;
+    }
+
+    video {
+        width: 95%;
+    }
+
+    p {
+        width: 90%;
+    }
+}
+
+/* Tablet style rules */
+@media screen and (min-width: 601px) and (max-width: 1199px) {
+    /* Styles for tablets */
+    .grid-container {
+        grid-template-columns: repeat(1, minmax(0, 1fr));
+        max-width: 100%;
+    }
+}
+
+/* Style rules for Desktop */
+
+@media screen and (min-width: 1200px), print {
+    .grid-container {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+        max-width: 100%;
+    }
+
+    .ham-menu {
+        display: none;
+    }
+
+}
+
+/* Print style rules */
+
+@media print {
+    /* Styles for printing */
+
+    body {
+        background-color: #fff;
+        color: #000;
+    }
+}
+
+
+

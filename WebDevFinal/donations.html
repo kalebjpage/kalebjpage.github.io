@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Feast Forward Foundation</title>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="css/styles.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Advent+Pro:ital,wdth,wght@0,150,100..900;1,150,100..900&family=PT+Mono&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Advent+Pro:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <link rel="apple-touch-icon" sizes="180x180" href="media/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="media/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="media/favicon-16x16.png">
+    <link rel="manifest" href="index.html">
+</head>
+<body>
+    <nav>
+            <div class="logo">
+                <img src="media/logo.jpeg" alt="helping hands logo">
+                <h1>Feast Forward Foundation</h1>
+            </div>
+
+            <div class="links">
+                <a href="index.html">Main Page</a>
+                <a href="volunteer.html">Volunteer</a>
+                <a href="aboutus.html">About Us</a>
+                <a href="stories.html">Our Stories</a>
+                <a href="faq.html">FaQ</a>
+                <a href="donations.html"class="current">Donations</a>
+            </div>
+
+
+        <div class="mobile">
+            <nav>
+                <div class="ham-menu">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
+            </nav>
+        </div>
+    </nav>
+    <main>
+        <table>
+            <thead>
+                <tr>
+                    <th>Donation Amount</th>
+                    <th>Perks</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>$10</td>
+                    <td>Thank you email</td>
+                </tr>
+                <tr>
+                    <td>$25</td>
+                    <td>Personalized thank you card</td>
+                </tr>
+                <tr>
+                    <td>$50</td>
+                    <td>Recognition on our website</td>
+                </tr>
+                <tr>
+                    <td>$100</td>
+                    <td>Exclusive donor newsletter</td>
+                </tr>
+                <tr>
+                    <td>$250</td>
+                    <td>Virtual meet and greet with our team</td>
+                </tr>
+                <tr>
+                    <td>$500</td>
+                    <td>Invitation to special donor event</td>
+                </tr>
+            </tbody>
+        </table>
+        
+        <p>Thank you for your support!</p>
+        <img src="media/thankyou.jpg" alt="Thank you image" style="max-width: 100px; height: 100px;">
+    </div>
+        <h1>Make a Donation</h1>
+        <p>Your generosity has the power to transform lives and make a meaningful impact on the communities we serve. At Feast Forward Foundation, we are dedicated to alleviating hunger, providing essential resources, and fostering a sense of hope for those in need. Every donation, no matter the size, helps us continue our mission and reach more individuals and families facing food insecurity and other challenges.</p>
+        <form action="submit_donation.php" method="POST">
+            <label for="name">Your Name:</label>
+            <input type="text" id="name" name="name" required>
+
+            <label for="email">Your Email:</label>
+            <input type="email" id="email" name="email" required>
+
+            <label for="amount">Donation Amount ($):</label>
+            <input type="number" id="amount" name="amount" min="1" required>
+
+            <label for="message">Message (optional):</label>
+            <textarea id="message" name="message" rows="4" cols="50"></textarea>
+
+            <button type="submit">Submit Donation</button>
+        </form>
+    </main>
+    <footer>
+
+        <div class="credits">
+            <p>&copy; Copyright 2024. All Rights Reserved.</p>
+        </div>
+
+        <div class="social">
+            <a href="http://www.facebook.com" target="_blank"><img src="media/facebooklogo.png" alt="facebook logo"></a>
+            <a href="http://www.twitter.com" target="_blank"><img src="media/twitterlogo.png" alt="twitter logo"></a>
+        </div>
+    </footer>
+
+</div>
+    <script src="scripts/script.js"></script>
+</body>
+</html>
